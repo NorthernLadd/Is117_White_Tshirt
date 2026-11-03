@@ -1,11 +1,11 @@
 # Olympus: ethical persuasion proposals
 
-AI-drafted plan for both modernist and postmodernist branches. Learner choice, visitor-benefit explanation and approval of final copy are pending. These are not active storefront features or measured conversion outcomes.
+AI-drafted plan for both modernist and postmodernist branches. Unity was selected and a visitor-benefit explanation was supplied after the AI prompt. It is implemented in both storefronts. Reciprocity remains a proposal. No conversion outcome has been measured.
 
 | Application | Proposed page element and copy                                                                                                                                                                                                    | Mechanism and visitor benefit                                                                                                                                                                                                                                            |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Reciprocity | A free, open checklist beside the offer: **Before buying: evaluate any shirt.** Inspect the shirt you already own for wear; check its actual care label; ask for verified fabric, fit and durability information before deciding. | Gives useful decision support before asking for a purchase. Helps the athlete evaluate repeated-use needs; may reveal that buying is unnecessary. No signup, payment or implied obligation.                                                                              |
-| Unity       | A short identity panel: **Your summit. Your pace.** Olympus is for the resolve you bring, whether your next goal is a summit or a day hike.                                                                                       | Offers identification with the brand's chosen value of perseverance and includes the secondary day hiker. It invites belonging; it does not assert membership, community size, endorsements or founder credentials. Revisit if visitors do not identify with that value. |
+| Unity       | A short identity panel: **Your summit. Your pace.** Whether you're new to mountain goals or building on experience, Olympus celebrates the resolve you bring.                                                                     | Offers identification with the brand's chosen value of perseverance and includes the secondary day hiker. It invites belonging; it does not assert membership, community size, endorsements or founder credentials. Revisit if visitors do not identify with that value. |
 
 ## One actual element, explained
 
@@ -22,4 +22,4 @@ Use identical checklist and invitation copy in both styles. Modernist: aligned r
 
 ## Next decision
 
-Learner selects one proposed page element and explains how it helps their visitor. Then agree or revise both applications before making them active on either storefront.
+Review the implemented unity message and agree or revise the second application. Reciprocity is not active yet. Logo review and learner browser observations remain pending.

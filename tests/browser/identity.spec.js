@@ -32,6 +32,11 @@ test("Olympus identity stays shared across the storefront, guide and studio", as
       await page.screenshot({
         path: `docs/explorations/olympus-${name}-${width}.png`,
       });
+      if (name === "storefront") {
+        await page
+          .locator(".starter-next")
+          .screenshot({ path: `docs/explorations/olympus-unity-${width}.png` });
+      }
       if (name === "styleguide") {
         await page
           .locator("#logo")
