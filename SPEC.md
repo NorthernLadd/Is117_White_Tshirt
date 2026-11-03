@@ -68,10 +68,10 @@ A simple original SVG wordmark is enough. Show small-size and one-color presenta
 
 Choose two applications that help the visitor make a voluntary, informed decision. Record their real implementation and mechanism rather than a principle name alone. Required size selection or validation alone does not establish consistency. Do not invent social proof, scarcity, authority, or product facts.
 
-| Principle                             | Actual copy or interaction                                                                                                | Visitor benefit / factual support                                                                                         |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Reciprocity (AI proposal, not agreed) | Free shirt-evaluation checklist; see [plan](docs/persuasion-plan.md) and guide section 07. Not active on storefront.      | Useful questions before shopping; no product claims, signup or purchase obligation.                                       |
-| Unity (AI proposal, not agreed)       | Your summit. Your pace. Inclusive perseverance invitation; see [plan](docs/persuasion-plan.md). Not active on storefront. | Welcomes mountain athlete and casual hiker through a proposed shared value; no invented group, membership or endorsement. |
+| Principle                             | Actual copy or interaction                                                                                                                       | Visitor benefit / factual support                                                                                         |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| Reciprocity (AI proposal, not agreed) | Free shirt-evaluation checklist; see [plan](docs/persuasion-plan.md) and guide section 07. Not active on storefront.                             | Useful questions before shopping; no product claims, signup or purchase obligation.                                       |
+| Unity (selected; implemented)         | Your summit. Your pace. Experience-inclusive perseverance message in public/index.html; same copy in guide. See [plan](docs/persuasion-plan.md). | Welcomes mountain athlete and casual hiker through a proposed shared value; no invented group, membership or endorsement. |
 
 ## BRAND-001 — first branded storefront and live style guide
 

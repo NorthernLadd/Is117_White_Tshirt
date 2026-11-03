@@ -32,6 +32,11 @@ test("Olympus postmodernist identity stays shared across the storefront, guide a
       await page.screenshot({
         path: `docs/explorations/olympus-postmodernist-${name}-${width}.png`,
       });
+      if (name === "storefront") {
+        await page.locator(".starter-next").screenshot({
+          path: `docs/explorations/olympus-postmodernist-unity-${width}.png`,
+        });
+      }
       if (name === "styleguide") {
         await page.locator("#logo").screenshot({
           path: `docs/explorations/olympus-postmodernist-logo-${width}.png`,
