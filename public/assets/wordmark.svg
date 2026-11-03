@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 52" role="img" aria-labelledby="title">
   <title id="title">Olympus: wordmark with an upward arrow</title>
-  <g fill="#172925">
+  <g fill="#25243e">
     <text x="0" y="40" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="900" letter-spacing="-1.8">OLYMPUS</text>
     <path d="M289 8h35v35h-8V22l-30 30-6-6 30-30h-21z"/>
   </g>

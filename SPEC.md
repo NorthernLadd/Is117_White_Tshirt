@@ -6,10 +6,10 @@ This is the durable agreement between the learner and agent. Keep it concise and
 
 ## Current stage
 
-- Stage: Modernist identity implemented locally; review and remaining brand decisions in progress.
+- Stage: Postmodernist alternative implemented locally; compare with preserved modernist branch.
 - Current feature: `BRAND-001` — first branded storefront and live style guide.
-- Status: Scope agreed; issue #1 open; working on `codex/olympus-modernist` (branched from the current `codex/brand-001` work).
-- Next small decision: Review the implemented modernist identity and proposed logo; learner reason for the visual choice, promise, voice, persuasion applications and browser observations remain pending.
+- Status: Scope agreed; issue #1 open; working on `codex/olympus-postmodernist`; modernist implementation preserved in local commit `77c0453` on `codex/olympus-modernist`.
+- Next small decision: Review the postmodernist alternative and proposed logo; learner reason for the visual choice, promise, voice, persuasion applications and browser observations remain pending.
 - Issue: https://github.com/NorthernLadd/Is117_White_Tshirt/issues/1
 
 ## Product boundary
@@ -53,16 +53,16 @@ Compare two small hero previews before building the whole page. Hold the product
 
 A simple original SVG wordmark is enough. Show small-size and one-color presentations; they may use the same asset when it works.
 
-| Item                                              | Agreement or evidence                                                                                                                  |
-| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Shared headline / support / action                | Proposed: To the tops / For the climb you choose. For the resolve you bring. / Choose your size                                        |
-| Modernist preview, reference, and annotations     | [Structured ascent](public/explorations/modernist.html); V&A Kauffer drawing (1934), annotated on page                                 |
-| Postmodernist preview, reference, and annotations | [Myth meets mountain](public/explorations/postmodernist.html); V&A Bedin Super lamp (1981), annotated on page                          |
-| Chosen direction and reason                       | Learner requested modernist style across the project; reason not supplied                                                              |
-| Original SVG logo                                 | Proposed Olympus wordmark and geometric arrow: public/assets/wordmark.svg; final learner logo review pending                           |
-| Monochrome and small-size variants                | Same one-color SVG shown at navigation size, 110px small size and 190px monochrome in public/styleguide.html                           |
-| Logo review at actual use size                    | AI inspected desktop/narrow header and logo-board renders; learner review pending                                                      |
-| Shared palette, typography, spacing, and assets   | public/styles.css tokens shared across all three pages; Arial/Helvetica sans-serif, cream, dark green, terracotta and sage; shared SVG |
+| Item                                              | Agreement or evidence                                                                                                                                                               |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Shared headline / support / action                | Proposed: To the tops / For the climb you choose. For the resolve you bring. / Choose your size                                                                                     |
+| Modernist preview, reference, and annotations     | [Structured ascent](public/explorations/modernist.html); V&A Kauffer drawing (1934), annotated on page                                                                              |
+| Postmodernist preview, reference, and annotations | [Myth meets mountain](public/explorations/postmodernist.html); V&A Bedin Super lamp (1981), annotated on page                                                                       |
+| Chosen direction and reason                       | Learner requested modernist implementation, then a separate postmodernist branch. This branch explores the alternative; final keep/merge decision and visual reason remain pending. |
+| Original SVG logo                                 | Proposed Olympus wordmark and geometric arrow: public/assets/wordmark.svg; final learner logo review pending                                                                        |
+| Monochrome and small-size variants                | Same one-color SVG shown at navigation size, 110px small size and 190px monochrome in public/styleguide.html                                                                        |
+| Logo review at actual use size                    | AI inspected desktop/narrow header and logo-board renders; learner review pending                                                                                                   |
+| Shared palette, typography, spacing, and assets   | public/styles.css tokens shared across all three pages; Arial/Helvetica sans-serif with Georgia italic quotation, cream, deep violet, rust and lavender; shared SVG                 |
 
 ## Ethical persuasion
 
@@ -91,9 +91,9 @@ Keep when:
 
 Write a short result and link only evidence that exists. A passing browser check is evidence for its assertions, not customer research or proof of full accessibility.
 
-| Spec ID   | Files                                                                                                                                                           | Issue / PR                                                                              | Actual checks and observations                                                                                                                                       |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BRAND-001 | public/index.html, public/styleguide.html, public/studio.html, public/styles.css, public/studio.css, public/assets/wordmark.svg; tests/browser/identity.spec.js | [Issue #1](https://github.com/NorthernLadd/Is117_White_Tshirt/issues/1); PR not created | npm run check passed: formatting, lint, 7 server tests, 13 browser tests including shared-identity checks; AI desktop/narrow review complete; learner review pending |
+| Spec ID   | Files                                                                                                                                                           | Issue / PR                                                                              | Actual checks and observations                                                                                                                    |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BRAND-001 | public/index.html, public/styleguide.html, public/studio.html, public/styles.css, public/studio.css, public/assets/wordmark.svg; tests/browser/identity.spec.js | [Issue #1](https://github.com/NorthernLadd/Is117_White_Tshirt/issues/1); PR not created | Postmodernist npm run check passed: formatting, lint, 7 server tests, 13 browser tests; AI desktop/narrow review complete; learner review pending |
 
 ## Later
 

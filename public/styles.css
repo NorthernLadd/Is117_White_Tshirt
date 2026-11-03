@@ -1,11 +1,11 @@
-/* Olympus modernist identity: shared tokens for storefront, guide and studio. */
+/* Olympus postmodernist identity: shared tokens for storefront, guide and studio. */
 :root {
-  --color-paper: #f5f2e9;
-  --color-ink: #172925;
-  --color-muted: #526158;
-  --color-line: #abb4a8;
-  --color-accent: #a34217;
-  --color-soft: #dbe1d4;
+  --color-paper: #f5eddf;
+  --color-ink: #25243e;
+  --color-muted: #504653;
+  --color-line: #aaa0b3;
+  --color-accent: #913b29;
+  --color-soft: #cebddd;
   --color-white: #fff;
   --color-danger: #992e28;
   --font-body: arial, helvetica, sans-serif;
@@ -1295,11 +1295,13 @@ legend {
   }
 }
 
-/* Olympus: selected modernist identity, shared by all three project pages. */
+/* Olympus: alternative postmodernist identity, shared by all three project pages. */
 h1 em,
 .type-display em {
   color: var(--color-accent);
-  font-style: normal;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .olympus-hero {
@@ -1341,12 +1343,16 @@ h1 em,
   display: grid;
   place-items: center;
   isolation: isolate;
+  border: 2px solid var(--color-ink);
+  box-shadow: 12px 12px 0 var(--color-ink);
+  margin: 30px 12px 30px 0;
 }
 
 .olympus-ridge {
   position: absolute;
   inset: 0;
-  background: #b9c5af;
+  background: #ac9683;
+  opacity: 0.7;
   clip-path: polygon(0 100%, 72% 12%, 100% 100%);
 }
 
@@ -1425,4 +1431,26 @@ h1 em,
   .olympus-product {
     gap: 28px;
   }
+}
+
+.olympus-orbit {
+  position: absolute;
+  width: 82%;
+  aspect-ratio: 1;
+  border: 2px solid var(--color-ink);
+  border-radius: 50%;
+  background: #ead589;
+}
+
+.olympus-stamp {
+  position: absolute;
+  z-index: 2;
+  right: 18px;
+  bottom: 45px;
+  padding: 18px;
+  border: 2px solid var(--color-ink);
+  background: var(--color-paper);
+  font-weight: 900;
+  line-height: 1.5;
+  transform: rotate(-9deg);
 }

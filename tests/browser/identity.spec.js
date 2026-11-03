@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("Olympus identity stays shared across the storefront, guide and studio", async ({
+test("Olympus postmodernist identity stays shared across the storefront, guide and studio", async ({
   page,
 }) => {
   for (const width of [1440, 375]) {
@@ -30,15 +30,15 @@ test("Olympus identity stays shared across the storefront, guide and studio", as
         }),
       );
       await page.screenshot({
-        path: `docs/explorations/olympus-${name}-${width}.png`,
+        path: `docs/explorations/olympus-postmodernist-${name}-${width}.png`,
       });
       if (name === "styleguide") {
-        await page
-          .locator("#logo")
-          .screenshot({ path: `docs/explorations/olympus-logo-${width}.png` });
+        await page.locator("#logo").screenshot({
+          path: `docs/explorations/olympus-postmodernist-logo-${width}.png`,
+        });
         await expect(
           page.locator('[data-color-token="--color-accent"]'),
-        ).toHaveText("#a34217");
+        ).toHaveText("#913b29");
         await expect(page.locator(".type-display")).toHaveText("To thetops");
       }
     }
