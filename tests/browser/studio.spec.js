@@ -1,6 +1,34 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
+test("size prices update in both directions and bag items keep their own price", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.locator("#product-price")).toHaveText("From $26");
+  for (const [size, price] of [
+    ["S", 26],
+    ["M", 28],
+    ["L", 30],
+    ["XL", 32],
+    ["S", 26],
+  ]) {
+    await page.locator(`input[name="size"][value="${size}"]`).check();
+    await expect(page.locator("#product-price")).toHaveText(`$${price}`);
+  }
+  await page
+    .getByRole("button", { name: "Add to demo bag", exact: true })
+    .click();
+  await page.locator('input[name="size"][value="XL"]').check();
+  await page
+    .getByRole("button", { name: "Add to demo bag", exact: true })
+    .click();
+  await expect(page.locator("#bag-items li")).toHaveText([
+    "White T-shirt · Size S · Quantity 1 · $26 USD each",
+    "White T-shirt · Size XL · Quantity 1 · $32 USD each",
+  ]);
+});
+
 test("negative: choosing no size explains the problem and keeps the bag empty", async ({
   page,
 }) => {

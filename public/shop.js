@@ -10,6 +10,8 @@
   const bagItems = document.querySelector("#bag-items");
   const clearBag = document.querySelector("#clear-bag");
   const sizes = ["S", "M", "L", "XL"];
+  const productPrice = document.querySelector("#product-price");
+  const priceForSize = (size) => 26 + sizes.indexOf(size) * 2;
   const bag = [];
 
   const renderBag = () => {
@@ -20,7 +22,7 @@
       const quantity = bag.filter((item) => item === size).length;
       if (!quantity) return;
       const item = document.createElement("li");
-      item.textContent = `White T-shirt · Size ${size} · Quantity ${quantity}`;
+      item.textContent = `White T-shirt · Size ${size} · Quantity ${quantity} · $${priceForSize(size)} USD each`;
       bagItems.append(item);
     });
   };
@@ -45,6 +47,10 @@
   });
 
   form.addEventListener("change", () => {
+    const selected = form.querySelector('input[name="size"]:checked');
+    if (selected && sizes.includes(selected.value)) {
+      productPrice.textContent = `$${priceForSize(selected.value)}`;
+    }
     sizeError.hidden = true;
     form.querySelectorAll('input[name="size"]').forEach((input) => {
       input.removeAttribute("aria-invalid");

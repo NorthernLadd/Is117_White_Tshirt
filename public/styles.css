@@ -1,18 +1,15 @@
-/* Shared brand tokens. Change these after you agree on your brand direction.
-   Both the storefront and the live style guide use this file. */
+/* Olympus modernist identity: shared tokens for storefront, guide and studio. */
 :root {
-  --color-paper: #f6f5f0;
-  --color-ink: #171a18;
-  --color-muted: #5a615b;
-  --color-line: #d1d5cc;
-  --color-accent: #e3ef56;
-  --color-soft: #e8eae1;
+  --color-paper: #f5f2e9;
+  --color-ink: #172925;
+  --color-muted: #526158;
+  --color-line: #abb4a8;
+  --color-accent: #a34217;
+  --color-soft: #dbe1d4;
   --color-white: #fff;
   --color-danger: #992e28;
-  --font-body:
-    system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
-  --font-display:
-    system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
+  --font-body: arial, helvetica, sans-serif;
+  --font-display: arial, helvetica, sans-serif;
   --font-mono: ui-monospace, sfmono-regular, consolas, monospace;
   --space-1: 0.5rem;
   --space-2: 1rem;
@@ -87,7 +84,7 @@ button:disabled {
 
 ::selection {
   background: var(--color-accent);
-  color: var(--color-ink);
+  color: var(--color-white);
 }
 
 h1,
@@ -101,10 +98,11 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  font-weight: 550;
+  font-weight: 700;
 }
 
 h1 {
+  font-weight: 900;
   font-size: clamp(3.4rem, 6.25vw, 6.6rem);
   line-height: 0.99;
   letter-spacing: -0.075em;
@@ -185,7 +183,8 @@ p + p {
   align-items: center;
   gap: 1.5rem;
   padding: 0.8rem 3rem;
-  background: var(--color-accent);
+  background: var(--color-ink);
+  color: var(--color-white);
   font-size: 0.73rem;
   line-height: 1.5;
 }
@@ -426,7 +425,7 @@ legend {
   color: var(--color-danger);
   font-size: 0.8rem;
   margin-top: 0.9rem;
-  font-weight: 550;
+  font-weight: 700;
 }
 
 .button {
@@ -438,7 +437,7 @@ legend {
   border: 1px solid var(--color-ink);
   padding: 0.9rem 1.25rem;
   font-size: 0.82rem;
-  font-weight: 550;
+  font-weight: 700;
   line-height: 1.4;
   text-decoration: none;
   transition:
@@ -458,7 +457,7 @@ legend {
 
 .button-primary:hover {
   background: var(--color-accent);
-  color: var(--color-ink);
+  color: var(--color-white);
 }
 
 .button-secondary {
@@ -568,7 +567,7 @@ legend {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem 3rem;
-  background: var(--color-accent);
+  background: var(--color-soft);
   padding: 2.7rem 3rem 3rem;
   margin-block: 1rem 4rem;
 }
@@ -635,7 +634,7 @@ legend {
 }
 
 .hero-summary strong {
-  font-weight: 550;
+  font-weight: 700;
   color: var(--color-ink);
 }
 
@@ -690,7 +689,7 @@ legend {
   display: inline-block;
   padding: 0.3rem 0.55rem;
   background: var(--color-accent);
-  color: var(--color-ink);
+  color: var(--color-white);
   font-family: var(--font-mono);
   font-size: 0.6rem;
   line-height: 1.4;
@@ -769,7 +768,7 @@ legend {
 
 .logo-mono {
   width: 190px;
-  filter: brightness(0);
+  filter: none;
 }
 
 .logo-variant p,
@@ -837,7 +836,7 @@ legend {
 .type-display {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 4.5vw, 5rem);
-  font-weight: 550;
+  font-weight: 900;
   letter-spacing: -0.075em;
   line-height: 1;
   max-width: 700px;
@@ -1293,5 +1292,137 @@ legend {
   *::after {
     transition: none !important;
     animation: none !important;
+  }
+}
+
+/* Olympus: selected modernist identity, shared by all three project pages. */
+h1 em,
+.type-display em {
+  color: var(--color-accent);
+  font-style: normal;
+}
+
+.olympus-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 610px;
+}
+
+.olympus-message {
+  padding: 64px 24px 36px 0;
+}
+
+.olympus-message h1 {
+  font-size: clamp(70px, 8.3vw, 132px);
+  line-height: 0.88;
+  margin-top: 35px;
+}
+
+.olympus-message .product-intro {
+  max-width: 330px;
+  margin: 26px 0;
+  font-size: 19px;
+  letter-spacing: 0;
+}
+
+.olympus-message .button {
+  margin-top: 12px;
+}
+
+.olympus-message .micro-label {
+  margin-top: 34px;
+  font-size: 10px;
+}
+
+.olympus-art {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-soft);
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+
+.olympus-ridge {
+  position: absolute;
+  inset: 0;
+  background: #b9c5af;
+  clip-path: polygon(0 100%, 72% 12%, 100% 100%);
+}
+
+.olympus-art .shirt-image {
+  position: relative;
+  width: 85%;
+  height: 500px;
+  z-index: 1;
+  object-fit: contain;
+}
+
+.olympus-number,
+.olympus-caption {
+  position: absolute;
+  z-index: 2;
+  left: 24px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.olympus-number {
+  top: 24px;
+}
+
+.olympus-caption {
+  bottom: 24px;
+}
+
+.olympus-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding-block: 46px;
+  border-top: 1px solid var(--color-line);
+}
+
+.olympus-product h2 {
+  margin-top: 20px;
+}
+
+.olympus-product > div {
+  max-width: 460px;
+}
+
+.olympus-product .price-row {
+  margin-block: 24px;
+}
+
+.olympus-product .demo-disclaimer {
+  margin-top: 18px;
+}
+
+@media (width <= 760px) {
+  .olympus-hero,
+  .olympus-product {
+    grid-template-columns: 1fr;
+  }
+
+  .olympus-message {
+    padding: 36px 0;
+  }
+
+  .olympus-message h1 {
+    font-size: clamp(76px, 20vw, 110px);
+    margin-top: 25px;
+  }
+
+  .olympus-art {
+    min-height: 370px;
+  }
+
+  .olympus-art .shirt-image {
+    height: 350px;
+  }
+
+  .olympus-product {
+    gap: 28px;
   }
 }

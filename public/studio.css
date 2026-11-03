@@ -20,7 +20,7 @@
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: 1.5rem;
-  background: var(--color-accent);
+  background: var(--color-soft);
   padding: 1.6rem 2rem;
 }
 
@@ -229,12 +229,12 @@
   height: 100px;
   right: 15px;
   top: 10px;
-  background: var(--color-accent);
+  background: var(--color-soft);
   border-radius: 50%;
 }
 
 .modern-sketch i:last-child {
-  background: var(--color-accent);
+  background: var(--color-soft);
 }
 
 .direction-card h3 {

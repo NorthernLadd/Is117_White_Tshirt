@@ -1,0 +1,454 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172925;
+  background: #f5f2e9;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.skip {
+  position: absolute;
+  top: -80px;
+  padding: 12px;
+  background: white;
+  z-index: 5;
+}
+
+.skip:focus {
+  top: 0;
+}
+
+.preview-bar {
+  padding: 10px 4%;
+  background: #172925;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+header {
+  margin: 0 4%;
+  padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #abb4a8;
+  gap: 20px;
+}
+
+.brand {
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  text-decoration: none;
+}
+
+.brand-mark {
+  margin-left: 12px;
+  color: #a34217;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+  font-size: 13px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #a34217;
+  outline-offset: 5px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 4%;
+  min-height: 610px;
+}
+
+.hero-copy {
+  padding: 64px 24px 36px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: clamp(70px, 8.3vw, 132px);
+  letter-spacing: -0.075em;
+  line-height: 0.88;
+  margin: 35px 0 26px;
+  font-weight: 900;
+}
+
+h1 em {
+  font-style: normal;
+  color: #a34217;
+}
+
+.support {
+  font-size: 19px;
+  max-width: 330px;
+  line-height: 1.55;
+}
+
+.cta {
+  display: inline-flex;
+  gap: 55px;
+  padding: 18px 22px;
+  margin-top: 22px;
+  background: #172925;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hero-foot {
+  margin-top: 34px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.product-art {
+  background: #dbe1d4;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+
+.product-art img {
+  width: 85%;
+  height: 500px;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 18px 14px #17292525);
+}
+
+.ridge {
+  position: absolute;
+  inset: 0;
+  background: #b9c5af;
+  clip-path: polygon(0 100%, 72% 12%, 100% 100%);
+}
+
+.art-number {
+  position: absolute;
+  left: 24px;
+  top: 26px;
+  font-size: 11px;
+}
+
+.art-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  z-index: 2;
+}
+
+.art-stamp {
+  display: none;
+}
+
+.product-panel,
+.bag-panel,
+.notes {
+  margin: 0 4%;
+  padding: 46px 0;
+  border-top: 1px solid #abb4a8;
+}
+
+.product-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+h2 {
+  font-size: 28px;
+  letter-spacing: -0.04em;
+}
+
+p,
+li {
+  line-height: 1.6;
+}
+
+.product-panel p {
+  max-width: 440px;
+}
+
+.price {
+  font-size: 22px;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  font-weight: 700;
+}
+
+.field-help {
+  font-size: 13px;
+}
+
+.size-options {
+  display: flex;
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.size-option {
+  display: block;
+  position: relative;
+}
+
+.size-option input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.size-option span {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 48px;
+  border: 1px solid #52665a;
+}
+
+.size-option input:checked + span {
+  color: white;
+  background: #172925;
+}
+
+.size-option input:focus-visible + span {
+  outline: 3px solid #a34217;
+  outline-offset: 3px;
+}
+
+.button,
+#clear-bag {
+  padding: 15px 22px;
+  border: 1px solid #172925;
+  background: #172925;
+  color: #fff;
+  cursor: pointer;
+}
+
+#clear-bag:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.field-error {
+  color: #9b2b0a;
+  font-weight: 700;
+}
+
+.notes {
+  max-width: 880px;
+}
+
+.notes li {
+  margin-bottom: 12px;
+}
+
+footer {
+  margin: 0 4%;
+  padding: 30px 0;
+  border-top: 1px solid #abb4a8;
+  font-size: 12px;
+}
+
+.postmodernist {
+  background: #f5eddf;
+  color: #25243e;
+}
+
+.postmodernist .preview-bar,
+.postmodernist .cta {
+  background: #25243e;
+}
+
+.postmodernist header {
+  border-bottom: 2px solid #25243e;
+}
+
+.postmodernist h1 {
+  letter-spacing: -0.065em;
+}
+
+.postmodernist h1 em {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #913b29;
+}
+
+.postmodernist .product-art {
+  background: #cebddd;
+  margin: 30px 0;
+  border: 2px solid #25243e;
+  box-shadow: 12px 12px 0 #25243e;
+}
+
+.postmodernist .orbit {
+  position: absolute;
+  width: 82%;
+  aspect-ratio: 1;
+  border: 2px solid #25243e;
+  border-radius: 50%;
+  background: #ead589;
+}
+
+.postmodernist .ridge {
+  background: #ac9683;
+  clip-path: polygon(0 100%, 70% 18%, 100% 100%);
+  opacity: 0.7;
+}
+
+.postmodernist .art-number {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 100px;
+  top: -16px;
+  left: 14px;
+  color: #25243e;
+}
+
+.postmodernist .art-stamp {
+  display: block;
+  position: absolute;
+  right: 18px;
+  bottom: 45px;
+  z-index: 2;
+  padding: 18px;
+  font-size: 15px;
+  font-weight: 900;
+  border: 2px solid #25243e;
+  background: #f5eddf;
+  transform: rotate(-9deg);
+}
+
+.comparison main {
+  margin: 50px 4%;
+  max-width: 1200px;
+}
+
+.comparison h1 {
+  font-size: clamp(60px, 9vw, 120px);
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 50px 0;
+}
+
+.comparison-grid section {
+  border-top: 2px solid;
+  padding-top: 20px;
+}
+
+@media (width <= 650px) {
+  .preview-bar {
+    font-size: 9px;
+    flex-wrap: wrap;
+  }
+
+  header {
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    gap: 22px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy {
+    padding: 35px 0 24px;
+  }
+
+  h1 {
+    font-size: 84px;
+    margin: 25px 0;
+  }
+
+  .support {
+    font-size: 18px;
+  }
+
+  .product-art {
+    min-height: 370px;
+  }
+
+  .product-art img {
+    height: 350px;
+  }
+
+  .postmodernist .product-art {
+    margin: 10px 12px 30px 0;
+  }
+
+  .product-panel {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    gap: 35px;
+  }
+}

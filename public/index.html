@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="An unfinished, neutral T-shirt storefront for the IS117 Brand Studio. Build a brand through deliberate, visible design choices."
+      content="Olympus. To the tops. A white T-shirt demo with a determined point of view."
     />
-    <title>Your Brand — neutral storefront starter</title>
+    <title>Olympus — To the tops</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
     <script src="shop.js" defer></script>
@@ -16,8 +16,8 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <aside class="starter-notice" aria-label="Starter information">
       <span
-        ><strong>Unfinished by design.</strong> This is a neutral teaching
-        starter. Replace its identity after your brand decisions.</span
+        ><strong>Olympus / To the tops.</strong> A classroom storefront.
+        Fictional product data.</span
       >
       <a href="studio.html"
         >Enter the studio <span aria-hidden="true">↗</span></a
@@ -27,11 +27,11 @@
       <a
         class="brand-link"
         href="index.html"
-        aria-label="Your Brand storefront home"
+        aria-label="Olympus storefront home"
         ><img
           class="wordmark"
           src="assets/wordmark.svg"
-          alt="Neutral starter wordmark"
+          alt="Olympus wordmark"
           width="175"
           height="26"
       /></a>
@@ -48,97 +48,89 @@
     </header>
 
     <main id="main">
-      <section class="product-section wrap" aria-labelledby="product-title">
-        <div class="product-visual">
-          <div class="visual-label">
-            <span>001 / The starting point</span><span>Unbranded</span>
-          </div>
-          <img
+      <section class="olympus-hero wrap" aria-labelledby="product-title">
+        <div class="olympus-message">
+          <p class="eyebrow">OLYMPUS / THE WHITE T-SHIRT</p>
+          <h1 id="product-title">To the<br /><em>tops</em></h1>
+          <p class="product-intro">
+            For the climb you choose. For the resolve you bring.
+          </p>
+          <a class="button button-primary" href="#product-form"
+            >Choose your size <span aria-hidden="true">&#8599;</span></a
+          >
+          <p class="micro-label">
+            A white T-shirt. A determined point of view.
+          </p>
+        </div>
+        <div class="olympus-art">
+          <span class="olympus-ridge" aria-hidden="true"></span
+          ><span class="olympus-number" aria-hidden="true">01 / ASCENT</span
+          ><img
             class="shirt-image"
             src="assets/white-shirt.svg"
             alt="Plain white, unbranded short-sleeved T-shirt"
             width="800"
             height="880"
             fetchpriority="high"
-          />
-          <div class="image-caption">
-            <span>One product. Room for your point of view.</span
-            ><span aria-hidden="true">↙</span>
-          </div>
-        </div>
-        <div class="product-information">
-          <p class="eyebrow">
-            <span class="status-dot" aria-hidden="true"></span> Neutral product
-            / demo only
-          </p>
-          <h1 id="product-title">The white<br />T-shirt.</h1>
-          <p class="product-intro">A plain shirt. A place to begin.</p>
-          <p class="muted product-description">
-            This starter has a working product page and room for a brand. Its
-            audience, personality, message, and visual direction are still yours
-            to decide.
-          </p>
-          <div class="price-row">
-            <p class="price">$28 <span>USD</span></p>
-            <span class="micro-label">Fictional demo price</span>
-          </div>
-          <form id="product-form" class="product-form" novalidate>
-            <fieldset aria-describedby="size-help size-error">
-              <legend>Choose a size</legend>
-              <p id="size-help" class="field-help">
-                Demo sizes: S, M, L, and XL.
-              </p>
-              <div class="size-options">
-                <label class="size-option"
-                  ><input type="radio" name="size" value="S" /><span
-                    >S</span
-                  ></label
-                >
-                <label class="size-option"
-                  ><input type="radio" name="size" value="M" /><span
-                    >M</span
-                  ></label
-                >
-                <label class="size-option"
-                  ><input type="radio" name="size" value="L" /><span
-                    >L</span
-                  ></label
-                >
-                <label class="size-option"
-                  ><input type="radio" name="size" value="XL" /><span
-                    >XL</span
-                  ></label
-                >
-              </div>
-              <p id="size-error" class="field-error" role="alert" hidden>
-                Choose a size before adding the shirt to your demo bag.
-              </p>
-            </fieldset>
-            <button class="button button-primary add-button" type="submit">
-              Add to demo bag <span aria-hidden="true">↗</span>
-            </button>
-          </form>
-          <p class="demo-disclaimer">
-            A classroom interaction, using fictional product data. No order,
-            payment, or personal information is collected.
-          </p>
-          <dl class="product-facts">
-            <div>
-              <dt>Color</dt>
-              <dd>White</dd>
-            </div>
-            <div>
-              <dt>Brand identity</dt>
-              <dd>Not decided yet</dd>
-            </div>
-            <div>
-              <dt>Product claims</dt>
-              <dd>None supplied</dd>
-            </div>
-          </dl>
+          /><span class="olympus-caption">OLYMPUS / WHITE T-SHIRT</span>
         </div>
       </section>
-
+      <section class="olympus-product wrap" aria-labelledby="offer-title">
+        <div>
+          <p class="eyebrow">THE OFFER / DEMO ONLY</p>
+          <h2 id="offer-title">The white T-shirt.</h2>
+          <div class="price-row">
+            <p class="price" aria-live="polite" aria-atomic="true">
+              <b id="product-price">From $26</b> <span>USD</span>
+            </p>
+            <span class="micro-label">Fictional demo prices</span>
+          </div>
+          <p class="muted">
+            One white T-shirt, with a point of view rooted in perseverance.
+          </p>
+          <p class="demo-disclaimer">
+            Durability and mountain-use performance have not been verified. This
+            classroom demo collects no payment or personal information and
+            places no orders.
+          </p>
+        </div>
+        <form id="product-form" class="product-form" novalidate>
+          <fieldset aria-describedby="size-help size-error">
+            <legend>Choose a size</legend>
+            <p id="size-help" class="field-help">
+              Demo prices: S $26, M $28, L $30, and XL $32 USD.
+            </p>
+            <div class="size-options">
+              <label class="size-option"
+                ><input type="radio" name="size" value="S" /><span
+                  >S</span
+                ></label
+              >
+              <label class="size-option"
+                ><input type="radio" name="size" value="M" /><span
+                  >M</span
+                ></label
+              >
+              <label class="size-option"
+                ><input type="radio" name="size" value="L" /><span
+                  >L</span
+                ></label
+              >
+              <label class="size-option"
+                ><input type="radio" name="size" value="XL" /><span
+                  >XL</span
+                ></label
+              >
+            </div>
+            <p id="size-error" class="field-error" role="alert" hidden>
+              Choose a size before adding the shirt to your demo bag.
+            </p>
+          </fieldset>
+          <button class="button button-primary add-button" type="submit">
+            Add to demo bag <span aria-hidden="true">↗</span>
+          </button>
+        </form>
+      </section>
       <section
         id="demo-bag"
         class="bag-section wrap"
@@ -167,30 +159,25 @@
           </p>
         </div>
       </section>
-
       <section class="starter-next wrap" aria-labelledby="next-title">
-        <p class="eyebrow">For the person building this site</p>
-        <h2 id="next-title">The shirt stays.<br />The story is your work.</h2>
+        <p class="eyebrow">THE OLYMPUS DIRECTION</p>
+        <h2 id="next-title">Resolve.<br />In plain sight.</h2>
         <div>
           <p>
-            Choose who this is for, decide what the brand should express, and
-            make those choices visible. Keep the storefront and its
-            <a href="styleguide.html">live style guide</a> in sync.
+            Hero character. A clear grid. An upward gesture. Explore the
+            decisions behind Olympus and the visual system that holds this page
+            together.
           </p>
-          <a class="button button-secondary" href="studio.html"
-            >See the studio brief <span aria-hidden="true">↗</span></a
+          <a class="button button-secondary" href="styleguide.html"
+            >Explore the identity <span aria-hidden="true">&#8599;</span></a
           >
         </div>
       </section>
     </main>
-
     <footer class="site-footer wrap">
-      <p>
-        IS117 Brand Studio <span class="footer-separator"> / </span> Neutral
-        starter
-      </p>
+      <p>Olympus <span class="footer-separator"> / </span> To the tops</p>
       <p class="footer-tagline">Fictional product. Real design decisions.</p>
-      <a href="https://github.com/kaw393939/is117-brand-studio#readme"
+      <a href="https://github.com/NorthernLadd/Is117_White_Tshirt#readme"
         >Project README <span aria-hidden="true">↗</span></a
       >
     </footer>

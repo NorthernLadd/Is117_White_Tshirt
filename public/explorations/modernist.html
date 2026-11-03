@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Olympus — modernist exploration</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="explorations.css" />
+    <script src="../shop.js" defer></script>
+  </head>
+  <body class="modernist">
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="preview-bar">
+      <span>DESIGN EXPLORATION · 01 / Structured ascent</span
+      ><a href="index.html">Compare directions</a>
+    </div>
+    <header>
+      <a class="brand" href="../index.html"
+        >OLYMPUS<span class="brand-mark" aria-hidden="true">↗</span></a
+      >
+      <nav aria-label="Preview navigation">
+        <a href="#product-form">The shirt</a><a href="#notes">Design notes</a
+        ><a href="#demo-bag">Bag <span id="bag-count">0</span></a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="title">
+        <div class="hero-copy">
+          <p class="eyebrow">OLYMPUS / THE WHITE T-SHIRT</p>
+          <h1 id="title">To the<br /><em>tops</em></h1>
+          <p class="support">
+            For the climb you choose. For the resolve you bring.
+          </p>
+          <a class="cta" href="#product-form"
+            >Choose your size <span aria-hidden="true">↗</span></a
+          >
+          <p class="hero-foot">A white T-shirt. A determined point of view.</p>
+        </div>
+        <div class="product-art">
+          <span class="orbit" aria-hidden="true"></span
+          ><span class="ridge" aria-hidden="true"></span
+          ><span class="art-number" aria-hidden="true">01</span
+          ><img
+            src="../assets/white-shirt.svg"
+            alt="Plain white, unbranded short-sleeved T-shirt"
+            width="800"
+            height="880"
+          /><span class="art-caption">OLYMPUS / WHITE T-SHIRT</span
+          ><span class="art-stamp" aria-hidden="true">TO THE<br />TOPS ↗</span>
+        </div>
+      </section>
+      <section class="product-panel" aria-labelledby="product-heading">
+        <div>
+          <p class="eyebrow">THE OFFER / DEMO ONLY</p>
+          <h2 id="product-heading">The white T-shirt.</h2>
+          <p class="price" aria-live="polite" aria-atomic="true">
+            <b id="product-price">From $26</b> USD
+          </p>
+          <p>
+            Fictional demo prices. Durability and mountain-use performance have
+            not been verified.
+          </p>
+        </div>
+        <form id="product-form" class="product-form" novalidate>
+          <fieldset aria-describedby="size-help size-error">
+            <legend>Choose a size</legend>
+            <p id="size-help" class="field-help">
+              Demo prices: S $26, M $28, L $30, and XL $32 USD.
+            </p>
+            <div class="size-options">
+              <label class="size-option"
+                ><input type="radio" name="size" value="S" /><span
+                  >S</span
+                ></label
+              >
+              <label class="size-option"
+                ><input type="radio" name="size" value="M" /><span
+                  >M</span
+                ></label
+              >
+              <label class="size-option"
+                ><input type="radio" name="size" value="L" /><span
+                  >L</span
+                ></label
+              >
+              <label class="size-option"
+                ><input type="radio" name="size" value="XL" /><span
+                  >XL</span
+                ></label
+              >
+            </div>
+            <p id="size-error" class="field-error" role="alert" hidden>
+              Choose a size before adding the shirt to your demo bag.
+            </p>
+          </fieldset>
+          <button class="button button-primary add-button" type="submit">
+            Add to demo bag <span aria-hidden="true">↗</span>
+          </button>
+        </form>
+      </section>
+      <section class="bag-panel" id="demo-bag" aria-labelledby="bag-title">
+        <h2 id="bag-title">Your demo bag.</h2>
+        <p id="bag-status" role="status" aria-live="polite" aria-atomic="true">
+          Your demo bag is empty. Choose a size to try it.
+        </p>
+        <ul id="bag-items"></ul>
+        <button id="clear-bag" type="button" disabled>Empty demo bag</button>
+        <p>No checkout. No payment. The bag resets on reload.</p>
+      </section>
+      <section class="notes" id="notes" aria-labelledby="notes-title">
+        <p class="eyebrow">WHY THIS DIRECTION</p>
+        <h2 id="notes-title">01 / Structured ascent</h2>
+        <p>
+          <a href="https://www.vam.ac.uk/articles/what-was-modernism"
+            >Reference: Edward McKnight Kauffer, Drawing, 1934, V&amp;A,
+            E.3770-2004.</a
+          >
+          Visually inspected: jointed black geometric parts form a figure across
+          a tilted pale plane.
+        </p>
+        <ul>
+          <li>
+            A repeatable grid aligns navigation, message, product, and size
+            controls: function leads the composition.
+          </li>
+          <li>
+            Heavy sans-serif hierarchy and a diagonal ridge turn the upward idea
+            into a clear reading path.
+          </li>
+          <li>
+            Flat shapes and system fonts keep production simple and repeatable,
+            rather than reproducing the drawing.
+          </li>
+        </ul>
+        <p>
+          <strong>Intended effect:</strong> ordered, deliberate confidence for
+          the mountain athlete; easy price and size comparison for the day
+          hiker.
+        </p>
+        <p>
+          <strong>Risk:</strong> the technical visual language may imply
+          performance we have not substantiated. Explicit demo wording counters
+          that inference.
+        </p>
+      </section>
+    </main>
+    <footer>
+      Olympus · Local design exploration ·
+      <a href="../index.html">Return to baseline</a>
+    </footer>
+  </body>
+</html>

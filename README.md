@@ -1,8 +1,8 @@
-# IS117 Brand Studio
+# Olympus — IS117 Brand Studio
 
 **The same white T-shirt can carry very different meanings.** Develop a brand for it with an AI collaborator, then make those decisions visible in a professional website and a live style guide.
 
-This template starts with a working, deliberately neutral storefront. Your audience, name, promise, logo, voice, and visual direction are **not chosen yet**. You make the decisions; the agent helps you explore, build, check, and revise them.
+**Current local status:** Olympus / “To the tops” uses the selected modernist direction on the storefront, live style guide and studio overview, on branch `codex/olympus-modernist`. Size prices and the temporary demo bag work. Logo, voice, promise and ethical persuasion review remain in progress; BRAND-001 is not yet kept or published.
 
 **A short record, visible to you:** your AI coach updates [LEARNING.md](LEARNING.md) with brief task-related explanations, observations and help received. It is AI-drafted, not a full transcript, and may be public with your repository. Review it and correct or remove excerpts before they are committed or pushed. Your instructor uses it alongside the project with this [simple three-part rubric](docs/assessment.md); the AI does not assign your grade.
 
