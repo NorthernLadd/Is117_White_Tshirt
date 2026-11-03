@@ -47,6 +47,8 @@ Provisional AI voice proposal: bold, determined, encouraging; not explicitly app
 
 ## Visual decision
 
+Modernist refinement requested by learner: add mountain imagery to fill open space. Shared asset `public/assets/mountain-ridge.png` appears below the shirt in the storefront hero and in style-guide section 08. AI-generated landscape; no named location or product-test claim. Postmodernist branch unchanged.
+
 Learner product goal: strong and durable across repeated mountain climbs, including rough conditions. This is an unverified aspiration, not an established product fact or approved performance claim.
 
 Compare two small hero previews before building the whole page. Hold the product, headline, supporting copy, and action identical. Use specific real design references and annotate visual choices, intended effect, and risk.
