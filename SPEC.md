@@ -59,7 +59,7 @@ A simple original SVG wordmark is enough. Show small-size and one-color presenta
 | Modernist preview, reference, and annotations     | [Structured ascent](public/explorations/modernist.html); V&A Kauffer drawing (1934), annotated on page                                 |
 | Postmodernist preview, reference, and annotations | [Myth meets mountain](public/explorations/postmodernist.html); V&A Bedin Super lamp (1981), annotated on page                          |
 | Chosen direction and reason                       | Learner requested modernist style across the project; reason not supplied                                                              |
-| Original SVG logo                                 | Proposed Olympus wordmark and geometric arrow: public/assets/wordmark.svg; final learner logo review pending                           |
+| Original SVG logo                                 | Proposed geometric Olympus wordmark and summit route: public/assets/wordmark.svg; final learner logo review pending                    |
 | Monochrome and small-size variants                | Same one-color SVG shown at navigation size, 110px small size and 190px monochrome in public/styleguide.html                           |
 | Logo review at actual use size                    | AI inspected desktop/narrow header and logo-board renders; learner review pending                                                      |
 | Shared palette, typography, spacing, and assets   | public/styles.css tokens shared across all three pages; Arial/Helvetica sans-serif, cream, dark green, terracotta and sage; shared SVG |
@@ -68,10 +68,10 @@ A simple original SVG wordmark is enough. Show small-size and one-color presenta
 
 Choose two applications that help the visitor make a voluntary, informed decision. Record their real implementation and mechanism rather than a principle name alone. Required size selection or validation alone does not establish consistency. Do not invent social proof, scarcity, authority, or product facts.
 
-| Principle      | Actual copy or interaction | Visitor benefit / factual support |
-| -------------- | -------------------------- | --------------------------------- |
-| Not chosen yet | Not chosen yet             | Not chosen yet                    |
-| Not chosen yet | Not chosen yet             | Not chosen yet                    |
+| Principle                             | Actual copy or interaction                                                                                                | Visitor benefit / factual support                                                                                         |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Reciprocity (AI proposal, not agreed) | Free shirt-evaluation checklist; see [plan](docs/persuasion-plan.md) and guide section 07. Not active on storefront.      | Useful questions before shopping; no product claims, signup or purchase obligation.                                       |
+| Unity (AI proposal, not agreed)       | Your summit. Your pace. Inclusive perseverance invitation; see [plan](docs/persuasion-plan.md). Not active on storefront. | Welcomes mountain athlete and casual hiker through a proposed shared value; no invented group, membership or endorsement. |
 
 ## BRAND-001 — first branded storefront and live style guide
 
